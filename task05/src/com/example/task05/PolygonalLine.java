@@ -14,7 +14,7 @@ public class PolygonalLine {
      */
     public void setPoints(Point[] points) {
         for (int i = 0; i < points.length; i++) {
-            this.points.add(points[i]);
+            this.points.add(new Point(points[i].x, points[i].y));
         }
     }
 
@@ -24,7 +24,7 @@ public class PolygonalLine {
      * @param point точка, которую нужно добавить к ломаной
      */
     public void addPoint(Point point) {
-        points.add(point);
+        points.add(new Point(point.x, point.y));
     }
 
     /**
